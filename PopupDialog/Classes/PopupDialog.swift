@@ -89,7 +89,7 @@ final public class PopupDialog: UIViewController {
         title: String?,
         message: String?,
         image: UIImage? = nil,
-        buttonAlignment: UILayoutConstraintAxis = .vertical,
+        buttonAlignment: NSLayoutConstraint.Axis = .vertical,
         transitionStyle: PopupDialogTransitionStyle = .bounceUp,
         gestureDismissal: Bool = true,
         insets: [Int] = [0,0,0,0],
@@ -118,7 +118,7 @@ final public class PopupDialog: UIViewController {
      */
     public init(
         viewController: UIViewController,
-        buttonAlignment: UILayoutConstraintAxis = .vertical,
+        buttonAlignment: NSLayoutConstraint.Axis = .vertical,
         transitionStyle: PopupDialogTransitionStyle = .bounceUp,
         gestureDismissal: Bool = true,
         insets: [Int] = [0,0,0,0],
@@ -298,7 +298,7 @@ final public class PopupDialog: UIViewController {
 extension PopupDialog {
 
     /// The button alignment of the alert dialog
-    public var buttonAlignment: UILayoutConstraintAxis {
+    public var buttonAlignment: NSLayoutConstraint.Axis {
         get {
             if #available(iOS 9.0, *) {
                 let buttonStackView = popupContainerView.buttonStackView as! UIStackView
