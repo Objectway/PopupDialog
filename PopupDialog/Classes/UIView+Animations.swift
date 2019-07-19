@@ -39,7 +39,7 @@ internal enum AnimationDirection {
 internal extension UIView {
 
     /// The key for the fade animation
-    internal var fadeKey: String { return "FadeAnimation" }
+    var fadeKey: String { return "FadeAnimation" }
 
     /*!
      Applies a fade animation to this view
@@ -47,7 +47,7 @@ internal extension UIView {
      - parameter value:     The end value of this animation
      - parameter duration:  The duration of this animation
      */
-    internal func pv_fade(_ direction: AnimationDirection, _ value: Float, duration: CFTimeInterval = 0.08) {
+    func pv_fade(_ direction: AnimationDirection, _ value: Float, duration: CFTimeInterval = 0.08) {
         layer.removeAnimation(forKey: fadeKey)
         let animation = CABasicAnimation(keyPath: "opacity")
         animation.duration = duration
@@ -57,7 +57,7 @@ internal extension UIView {
         layer.add(animation, forKey: fadeKey)
     }
 
-    internal func pv_layoutIfNeededAnimated(duration: CFTimeInterval = 0.08) {
+    func pv_layoutIfNeededAnimated(duration: CFTimeInterval = 0.08) {
         UIView.animate(withDuration: duration, delay: 0, options: UIView.AnimationOptions(), animations: {
             self.layoutIfNeeded()
         }, completion: nil)

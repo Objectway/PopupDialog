@@ -4,13 +4,18 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - Nimble (5.0.0)
-  - PopupDialog (0.5.3)
+  - Nimble (8.0.2)
+  - PopupDialog (0.5.6)
 
 DEPENDENCIES:
   - FBSnapshotTestCase
-  - Nimble (~> 5.0.0)
+  - Nimble
   - PopupDialog (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - FBSnapshotTestCase
+    - Nimble
 
 EXTERNAL SOURCES:
   PopupDialog:
@@ -18,9 +23,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  Nimble: 56fc9f5020effa2206de22c3dd910f4fb011b92f
-  PopupDialog: 556684104977055f8b3c2752890b26cf3de4def4
+  Nimble: 622629381bda1dd5678162f21f1368cec7cbba60
+  PopupDialog: 38125d639b05237a9efceb72c91f0c3f14b9f77f
 
-PODFILE CHECKSUM: 3c0cdc96cf5fd9c2cbd806911d57125400e632f7
+PODFILE CHECKSUM: bcdb64709e01a3c24c3ec175ec7488565439522b
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.7.4
